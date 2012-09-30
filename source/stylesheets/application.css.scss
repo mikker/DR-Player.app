@@ -1,3 +1,22 @@
 @encoding utf-8;
 
 @import 'foundation';
+
+#splash {
+  background: url("/images/mountain-lion-galaxy-wallpaper.jpg") no-repeat center center;
+  margin: 1em 0;
+  padding: 1em 0 0;
+}
+
+dl {
+  line-height: 1.5em;
+  margin-bottom: 2em;
+  dt {
+    font-weight: bold;
+  }
+  dd {
+    & + dt {
+      margin-top: 1em;
+    }
+  }
+}
