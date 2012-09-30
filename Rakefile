@@ -20,6 +20,10 @@ namespace :remote do
   task :deploy do
     system "rsync -ruv --no-perms build/* #{REMOTE_HOST}:#{REMOTE_PATH}"
   end
+  desc "Setup directory"
+  task :setup do
+    system "ssh #{REMOTE_HOST} 'mkdir -p #{REMOTE_PATH}'"
+  end
   desc "Clean remote then deploy to remote"
   task :clean_deploy => [ 'remote:clean', 'remote:deploy' ]
 end
