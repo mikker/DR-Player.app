@@ -1,3 +1,10 @@
+Encoding.default_external = 'utf-8'
+
+Slim::Engine.default_options[:pretty] = true
+Slim::Engine.default_options[:disable_escape] = true
+
+activate :directory_indexes
+
 ### 
 # Compass
 ###
