@@ -14,8 +14,13 @@ layout: false
     <title><%= @title %></title>
   </head>
   <body class="<%= page_classes %>">
+    <div class="blinds top"></div>
+    <div class="blinds bottom"></div>
+    <div id="blindsButton">
+      <a href="#toggleBlinds"><img src="/images/blinds.png" alt="" /></a>
+    </div>
     <div id="controls">
-      <p>
+      <p id="channels">
       <a class="dr1 active" href="http://dr.dk/TV/popup/live/dr1"><%= image_tag("dr1.png") %></a><a class="dr2" href="http://dr.dk/TV/popup/live/dr2"><%= image_tag("dr2.png") %></a><a class="dr-k" href="http://dr.dk/TV/popup/live/dr-k"><%= image_tag("dr-k.png") %></a><a class="dr-ramasjang" href="http://dr.dk/TV/popup/live/dr-ramasjang"><%= image_tag("dr-ramasjang.png") %></a><a class="dr-update-2" href="http://dr.dk/TV/popup/live/dr-update-2"><%= image_tag("dr-update.png") %></a><a class="dr-hd" href="http://dr.dk/TV/popup/live/dr-hd"><%= image_tag("dr-hd.png") %></a>
       </p>
     </div>

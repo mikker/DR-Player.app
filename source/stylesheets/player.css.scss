@@ -13,6 +13,37 @@ body {
   font-size: 12px;
 }
 
+.blinds {
+  height: 34px;
+  width: 100%;
+  position: fixed;
+  top: -34px;
+  left: 0;
+  background: #000;
+  -webkit-transition: all .1s linear;
+  &.bottom {
+    top: auto;
+    bottom: -34px;
+  }
+}
+
+#blindsButton {
+  position: absolute;
+  top: 0;
+  right: 0;
+  &.dimmed {
+    opacity: .5;
+  }
+  a {
+    display: block;
+    margin: 4px;
+    padding: 5px 10px;
+    background: #000;
+    border: 1px solid #333;
+    @include border-radius(2px);
+  }
+}
+
 #controls {
   @include box-sizing(border-box);
   text-align: center;
@@ -43,9 +74,7 @@ body {
   background-color: #222;
 }
 
-#controls {
-  z-index: 1000;
-}
-#player {
-  z-index: 900;
-}
+#blindsButton  { z-index: 900; }
+.blinds        { z-index: 800; }
+#controls      { z-index: 700; }
+#player        { z-index: 600; }
