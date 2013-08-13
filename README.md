@@ -1,3 +1,5 @@
+![](https://raw.github.com/mikker/DR-Player.app/master/DR.png)
+
 DR-Player.app
 =============
 
