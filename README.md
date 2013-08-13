@@ -5,6 +5,8 @@ DR-Player.app
 
 Watch DR's TV channels live on your Mac
 
+![](http://dr.brnbw.com/images/screenshot.png)
+
 # How?
 
 The app works by starting a kiosk-mode Chrome instance set to <http://dr.brnbw.com>. This is done with this shell command:
