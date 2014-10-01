@@ -1,34 +1,33 @@
 - @title = "DR Player.app &mdash; Se DRs kanaler LIVE på din Mac"
-.container
+.row
+  .large-10.columns.large-centered
+    #splash= image_tag "screenshot.png"
+.row
+  .large-6.columns.large-centered
+    .right= link_to image_tag("DRPlayer.png"), "/DRPlayer.app.zip"
+    h1 DR Player.app
+    h4.subheader Se DRs kanaler LIVE på din Mac.
+
+    ol
+      li Installér #{link_to "Google Chrome", "http://www.google.com/chrome", class: "tiny secondary button"}
+      li Hent #{link_to "DR Player.app", "/DRPlayer.app.zip", class: "tiny secondary button"}
+
+    hr
+
+    h3 Forklaring
+    dl
+      dt Har du noget med DR at gøre?
+      dd Intet.
+      dt Hvorfor Google Chrome?
+      dd DR.app er egentlig bare en indpakning til en enkelt kommando, der starter Chrome uden brugerflade på en bestemt URL &mdash; plus et farverigt ikon.
+      dt Men kunne man ikke lave det samme til Safari?
+      dd Jo, sikkert. Men DRs egen afspiller, som vi bruger her, bruger Flash, og jeg har ikke Flash installeret i Safari. Chrome har til gengæld sit eget Flash plugin indbygget.
+      dt Jeg kan ikke få det til at virke!
+      dd Det er jeg ked af. Så må du nøjes med #{link_to "dr.dk", "http://dr.dk"} indtil videre.
+
+    hr
+
   .row
-    .ten.columns.centered
-      #splash= image_tag "screenshot.png"
-  .row
-    .six.columns.centered
-      .right= link_to image_tag("DRPlayer.png"), "/DRPlayer.app.zip"
-      h1 DR Player.app
-      h4.subheader Se DRs kanaler LIVE på din Mac.
-
-      ol
-        li Installér #{link_to "Google Chrome", "http://www.google.com/chrome", class: "tiny secondary button"}
-        li Hent #{link_to "DR Player.app", "/DRPlayer.app.zip", class: "tiny secondary button"}
-
-      hr
-
-      h3 Forklaring
-      dl
-        dt Har du noget med DR at gøre?
-        dd Intet.
-        dt Hvorfor Google Chrome?
-        dd DR.app er egentlig bare en indpakning til en enkelt kommando, der starter Chrome uden brugerflade på en bestemt URL &mdash; plus et farverigt ikon.
-        dt Men kunne man ikke lave det samme til Safari?
-        dd Jo, sikkert. Men DRs egen afspiller, som vi bruger her, bruger Flash, og jeg har ikke Flash installeret i Safari. Chrome har til gengæld sit eget Flash plugin indbygget.
-        dt Jeg kan ikke få det til at virke!
-        dd Det er jeg ked af. Så må du nøjes med #{link_to "dr.dk", "http://dr.dk"} indtil videre.
-
-      hr
-
-    .row
-      .six.columns.centered
-        p.text-center
-          = link_to image_tag("brainbow.png"), "http://brnbw.com"
+    .large-6.columns.large-centered
+      p.text-center
+        = link_to image_tag("brainbow.png"), "http://brnbw.com"
