@@ -1,0 +1,2 @@
+#!/bin/sh
+exec /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome  --app="http://dr.brnbw.com/player?version=0.9" --user-data-dir="/Users/$USER/Library/Application Support/Google/DRPlayer" "$@"
